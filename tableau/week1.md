@@ -132,7 +132,7 @@ outer 조인: 두 테이블의 모든 값을 완전히 포함하는 테이블이
 
 3027개의 주문
 <!-- 캡쳐 이미지를 첨부해주세요 -->
-![innerjoin](/img/capture2.png) 
+![innerjoin]([/img/capture2.png](https://github.com/jeewonm54/til/blob/29150e2e360f47d7e2eda04986bd1e8c5781ae57/img/capture2.png)) 
 
 
 ## 6강. 데이터결합 혼합
@@ -203,6 +203,7 @@ T|F : bool형식
  이때, '조인, 관계, 혼합, 유니온' 중 본 목적에 적합한 결합 방법은 무엇인가요? 하나씩 드래그하지 않고, 와일드카드를 이용해 모든 데이터를 빠르게 결합해보세요.
 
 <!-- 텍스트 및 이미지로 문제 풀이 과정을 기술해주세요 -->
+![유니온](https://github.com/jeewonm54/til/blob/29150e2e360f47d7e2eda04986bd1e8c5781ae57/img/capture3.png)
 
 ```
 유니온! 테이블 구조, 필드수, 필드 이름, 데이터 유형이 모두 동일하기 때문에 사용 가능. 
