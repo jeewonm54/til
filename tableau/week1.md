@@ -132,7 +132,7 @@ outer 조인: 두 테이블의 모든 값을 완전히 포함하는 테이블이
 
 3027개의 주문
 <!-- 캡쳐 이미지를 첨부해주세요 -->
-![innerjoin]([/img/capture2.png](https://github.com/jeewonm54/til/blob/29150e2e360f47d7e2eda04986bd1e8c5781ae57/img/capture2.png)) 
+![innerjoin](https://github.com/jeewonm54/til/blob/13b22e926967b3c357686b3122fa32df697705c2/img/capture2.png)
 
 
 ## 6강. 데이터결합 혼합
