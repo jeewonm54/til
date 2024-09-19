@@ -36,7 +36,8 @@ ORDER BY id
 
 
 데이터 활용 과정
-![image]()
+
+![image](https://github.com/jeewonm54/til/blob/10de4061dc387911024b70b6827f697b4abfdfa5/img/capture4.png)
 
 SQL쿼리를 작성하기 전에 생가해보기
 - 데이터가 어떻게 저장되어 있는가? 
@@ -44,7 +45,8 @@ SQL쿼리를 작성하기 전에 생가해보기
 - 컬럼의 의미는 무엇인가?
 
 ERD(Entitiy Relationship Diagram): 데이터베이스 설계에서 중요한 도구로, 데이터베이스 안의 데이터와 그들 간의 관계를 시각적으로 표현하는 다이어그램
-![image]()
+
+![image](https://github.com/jeewonm54/til/blob/10de4061dc387911024b70b6827f697b4abfdfa5/img/capture5.png)
 
 ERD가 없다면.. 직접 탐색해보기
  - 어떤 테이블이 존재하는가?
