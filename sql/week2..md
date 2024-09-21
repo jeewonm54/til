@@ -9,7 +9,13 @@ Col3,
 **WHERE**: 만약 원하는 조건이 있다면 어떤 조건인가?
  Col1 = 1 : 조건문
 
-![sql1]()
+```
+select
+ id
+from 'basic.pokemon'
+where
+ type1 = "Fire"
+```
 
 
 #til-bigquery : 프로젝트명 
@@ -25,17 +31,35 @@ Col3,
  * : 모든 컬럼을 출력하겠다 (비용이 많이 나간다..)
 
 모든 데이터, 모든 컬럼을 출력하고 싶을 때 
-![sql2]()
+```
+select
+ *
+from 'basic.pokemon'
+where
+ type1 = "Fire"
+```
 #데이터를 어떻게 활용하고 싶냐에 따라 활용하고 싶은 목적이 있어야 어떤 컬럼을 선택할지 알 수 있게됨
 
 #as 는 별칭을 지어줄 때 사용한다. 
-![sql3]()
+```
+select
+ id as pokemon_id
+from 'basic.pokemon'
+where
+ type1 = "Fire"
+```
 
 SELECT
  * EXCEPT(제외할 칼럼)
 이런 형태도 가능. 칼럼이 많을 때 유용. JOIN세어 사용할 때도 유용 
 tbh 현업에서 SELECT* 사용 잘 안함. 
-![sql4]() 
+```
+select
+ *EXCEPT(eng_name)
+from 'basic.pokemon'
+where
+ type1 = "Fire"
+```
 
 #세미콜론이 있는 경우 : 하나의 커리가 끝났다
 
