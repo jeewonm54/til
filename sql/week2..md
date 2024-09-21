@@ -50,51 +50,53 @@ tbh 현업에서 SELECT* 사용 잘 안함.
  2) trainer 테이블을 어디에 명시해야 할까? => FROM
  3) 필터링 조건이 없을까? => 모든데이터 => 필터링을 할 필요가 없겠다
  4) 모든 데이터 => 모든 컬림일 수도 있겠다(추측) 쿼리 작성 => 애매하면 모든 데이터 정의가 무엇인가?
-    
+``` 
 select
  *
 from basic.trainer 
-
+```
 
 2. trainer 테이블에 있는 트레이너의 name을 출력하는 쿼리를 작성해주세요
  1) trainer 테이블 사용
  2) name 칼럼을 사용
-    
+```    
 select
  name
 from basic.trainer 
-
+```
 
 3. trainer 테이블에 있는 트레이너의 name, age를 출력하는 쿼리를 작성해주세요
    1) trainer 테이블 사용
    2) 조건 설정 없음
    3) name, age 칼럼 사용
   
-  """
+```
 select
  name, age
 from basic.trainer 
-  """
+```
 
 4. trainer의 테이블에서 idrk 3인 트레이너의 name, age, hometown을 출력하는 쿼리를 작성해주세요
  1) trainer 테이블 사용
  2) 조건 설정 => id가 3인
  3) 칼럼: name, age, hometown
-    
+```    
 select
  name, age, hometown
 from basic.trainer 
 where
  id = 3
+```
 
 5. pokemon 테이블에서 "피카츄"의 공격력과 체력을 확인할 수 있는 쿼리를 작성해주세요
  1) pokemon 테이블
  2) 조건? => "피카츄" kor_name => 피카츄
  3) 공격력, 체력 => 테이블에서 어떤 칼럼인지 확인해야 함 => attack, hp
-
+```
 select
   attack
   hp
 from basic.pokemon 
 where
  kor_name = "피카츄"
+```
