@@ -63,7 +63,7 @@ where
 
 #세미콜론이 있는 경우 : 하나의 커리가 끝났다
 
-![sql5]()
+![sql5](https://github.com/jeewonm54/til/blob/3c2bd48adfee196ac44be287ae0c06ab168d96b4/img/sql5.png)
 
 *자주하는 실수*
 컬럼 이름에 따옴표를 넣는 경우 ==> AS 에서는 따옴표 없이 기록한다
