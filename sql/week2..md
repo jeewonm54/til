@@ -69,6 +69,8 @@ where
 *자주하는 실수*
 컬럼 이름에 따옴표를 넣는 경우 ==> AS 에서는 따옴표 없이 기록한다
 
+
+
 # SELECT 연습문제
 1. trainer 테이블에 있는 모든 데이터를 보여주는 SQL 쿼리를 작성해주세요
  1) trainer 테이블에 어떤 데이터가 있는지 확인해보자
@@ -125,6 +127,8 @@ from basic.pokemon
 where
  kor_name =등)
 ```
+
+
 
 # 데이터 탐색 : 요약(집계, 그룹화) - COUNT, DISTINCT, GROUP BY
 
@@ -246,6 +250,7 @@ LIMIT 10
 ```
 쿼리의 맨 마지막에 작성
 
+
 **GROUP BY 연습문제**
 3. 포켓몬의 수를 타입 별로 집계하고, 포켓몬의 수가 10 이상인 타입만 남기는 쿼리를 작성해주세요. 포켓몬의 수가 많은 순으로 정리해주세요.
 -- pokemon
@@ -263,10 +268,16 @@ HAVING cnt >= 10
 ORDER BY cnt DESC
 ```
 
---
+
+
+
 집계하고 싶은 경우 : GROUP BY + 집계 함수(AVG, MAX 등) 
+-
 고유값을 알고 싶은 경우 : DISTINCT
+-
 조건을 설정하고 싶은 경우 : WHERE / HAVING
+-
 정렬을 하고 싶은 경우 : ORDER BY
+-
 출력 개수를 제한하고 싶은 경우 : LIMIT
---
+-
