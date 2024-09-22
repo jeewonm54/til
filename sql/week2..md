@@ -1,3 +1,4 @@
+# 데이터 탐색 (SELECT, FROM, WHERE)
 SQL 쿼리 구조
 SELECT -> FROM -> WHERE
 
@@ -122,5 +123,150 @@ select
   hp
 from basic.pokemon 
 where
- kor_name = "피카츄"
+ kor_name =등)
 ```
+
+# 데이터 탐색 : 요약(집계, 그룹화) - COUNT, DISTINCT, GROUP BY
+
+집계 : 그룹화해서 계산하다
+GROUP BY : 같은 값끼리 모아서 그룹화한다
+- 특정 칼럼을 기준으로 모으면서 다른 칼럼에선 집계 가능(합, 평균, MAX, MIN 등 )
+
+```
+SELECT
+ 집계할_컬럼1
+ 집계함수(COUNT, MAX, MIN 등)
+FROM table
+GROUP BY
+ 집계할_컬럼1
+
+```
+* 집계할 컬럼을 SELECT에 명시하고 그 컬럼을 꼭 GROUP BY에 작성하기
+
+**DISTINCT : 고유값을 알고 싶은 경우 (중복을 제거하는 것)**
+```
+SELECT
+ 집계할_컬럼
+ COUNT(DISTINT count할 컬럼)
+FROM table
+GROUP BY
+ 집계할_컬럼
+```
+
+**연습문제**
+1. pokemon 테이블에 있는 포켓몬 수를 구하는 커리를 구하시오.
+-- 사용할 테이블 : pokemon
+-- 집계할 때 사용할 계산 : 수를 구한다 => COUNT, 포켓몬
+```
+SELECT
+ count(id) AS cnt
+FROM basic.pokemon
+```
+
+2. 포켓몬의 수가 세대별로 얼마나 있는지 알 수 있는 쿼리를 작성해주세요. 
+-- 사용할 테이블 : pokemon
+-- 그룹화를 할때 사용할 컬럼 : 세대 
+-- 집계할 때 사용할 계산 : 얼마나 있는 => 수를 구한다 => COUNT
+```
+SELECT
+ generation
+ count(id) AS cnt
+FROM basic.pokemon
+GROUP BY
+ generation
+```
+
+**그룹화(집계) 활용 포인트**
+- 일자별 집계(원본 데이터는 특정 시간에 어떤 유저가 한 행동이 기록, 일자별로 집계)
+- 연령대별 집계(특정 연령대에서 더 많이 구매했는가?)
+- 특정 타입별 집계(특정 제품 타입을 많이 구매했는가?)
+- 앱 화면별 집계(어떤 화면에 유저가 많이 접근했는가?)
+- etc
+
+**조건을 설정하고 싶은 경우: WHERE**
+*table에 바로* 조건을 설정하고 싶은 경우 사용
+Raw Data 인 테이블 데이터에서 조건 설정 
+```
+SELECT
+ 컬럼1, 컬럼2
+ COUNT(컬럼1) AS col1_count
+FROM <table>
+WHERE
+ 컬럼1>=3
+```
+**조건을 설정하고 싶은 경우: HAVING**
+*GROUP BY한 후* 조건을 설정하고 싶은 경우 사용
+```
+SELECT
+ 컬럼1, 컬럼2
+ COUNT(컬럼1) AS col1_count
+FROM <table>
+WHERE
+GROUP BY 컬럼1, 컬럼2
+HAVING
+ col1_count>3
+```
+**WHERE + HAVING**
+```
+SELECT
+ 컬럼1, 컬럼2
+ COUNT(컬럼1) AS col1_count
+FROM <table>
+WHERE
+ 컬럼1 >=3
+GROUP BY 컬럼1, 컬럼2
+HAVING
+ col1_count>3
+```
+
+**서브쿼리**
+- SELCT 문 안에 존재하는 SELECT 쿼리
+- FROM 절에 또 다른 SELECT 문을 넣을 수 있음
+- 괄호로 묶어서 사용
+-> 서브쿼리를 작성하고, 서브쿼리 바깥에서 WHERE 조건 설정하는 것
+  = 서브쿼리에서 HAVING으로 하는 것
+
+**정렬하기 : ORDER BY**
+```
+SELCET
+ col
+FROM
+ORDER BY <컬럼><순서>
+```
+순서: DESC(내림차순), OSC(오름차순 -  보통 Default)
+쿼리의 맨 마지막에만 쓰면 됨
+
+**출력 개수 제한하기 : LIMIT**
+쿼리문의 결과 Row 수를 제한하고 싶은 경우 사용
+```
+SELCET
+ col
+FROM
+LIMIT 10
+```
+쿼리의 맨 마지막에 작성
+
+**GROUP BY 연습문제**
+3. 포켓몬의 수를 타입 별로 집계하고, 포켓몬의 수가 10 이상인 타입만 남기는 쿼리를 작성해주세요. 포켓몬의 수가 많은 순으로 정리해주세요.
+-- pokemon
+-- 조건(WHERE) => 테이블 원본 => 없음
+-- 집계 후 조건(HAVING) => 10 이상
+-- 포켓몬의 수가 많은 순으로 정렬 (ORDER BY 포켓몬 수 DESC)
+```
+SELCET
+ type1,
+ COUNT(id) AS cnt
+FROM basic.pokemon
+GROUP BY
+ type1
+HAVING cnt >= 10
+ORDER BY cnt DESC
+```
+
+--
+집계하고 싶은 경우 : GROUP BY + 집계 함수(AVG, MAX 등) 
+고유값을 알고 싶은 경우 : DISTINCT
+조건을 설정하고 싶은 경우 : WHERE / HAVING
+정렬을 하고 싶은 경우 : ORDER BY
+출력 개수를 제한하고 싶은 경우 : LIMIT
+--
