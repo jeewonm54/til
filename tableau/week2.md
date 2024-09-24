@@ -181,7 +181,6 @@ ex. 카테고리 별 주문날짜 매출 누적 그래프
 ```
 이중 축 : 두 가지 데이터를 하나의 축을 사용해 데이터를 표현하는 방식
 
-
 ```
 
 ![screen](https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/2nd%20study/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-09-12%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.57.52.png?raw=true)
@@ -215,7 +214,7 @@ Profit과 Sales 필드를 한눈에 보기 위해서 측정값 선반을 사용�
 Ctrl키 누르면서 드래그하면 복사됨
 
 맵에서도 이중축 사용 가능
-![img]()
+![img](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202024-09-24%20225100.png)
 
 ```js
 ## 참고
@@ -234,10 +233,10 @@ Latitude - 위도
 ## 18강: 텍스트테이블
 
 <!-- 텍스트테이블에 관해 배우게 된 점을 적어주세요-->
- ![img]()
+ ![img](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202024-09-24%20230232.png)
  텍스트테이블 생성
 
-![img]()
+![img](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202024-09-24%20230438.png)
 분석탭 -> 총계 드래그 소계 -> 범주별 층계 표시
 
 
@@ -280,7 +279,7 @@ Latitude - 위도
 2. 하위범주 별 매출 비율을 트리맵으로 표현
 
 3. 퀵 테이블 계산 -> 구성 비율로 변경
-![img]()
+![img](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202024-09-24%20233653.png)
 
 ```
 
@@ -303,10 +302,10 @@ https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/
 1. 국가/지역 -> 필터카드 -> south korea, china, japan
 2. 열 선반에 주문날짜(년) 필드 드래그 앤 드랍,
   행 선반에 매출, 수익 필드 드래그 앤 드랍
-![#2]()
+![#2](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/%232.png)
 3. 수익 우클릭 -> 이중축
 4. 열 선반에 + 눌러서 분기별, 월별로도 확인 가능
-![LAST]()
+![LAST](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/LAST.png)
 ```
 
 ### 참고 자료
