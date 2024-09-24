@@ -298,7 +298,7 @@ https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/
 레퍼런스와 꼭 같지 않아도 자유롭게 표현하고, 그 과정을 기술해주세요.
 ```
 
-```
+
 1. 국가/지역 -> 필터카드 -> south korea, china, japan
 2. 열 선반에 주문날짜(년) 필드 드래그 앤 드랍,
   행 선반에 매출, 수익 필드 드래그 앤 드랍
@@ -306,7 +306,7 @@ https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/
 3. 수익 우클릭 -> 이중축
 4. 열 선반에 + 눌러서 분기별, 월별로도 확인 가능
 ![LAST](https://github.com/jeewonm54/til/blob/abe0db968b759d403ad9b3fbfedf6d0289e0cda9/img/LAST.png)
-```
+
 
 ### 참고 자료
 
