@@ -59,11 +59,12 @@
 - HAVING : GROUP BY 와 함께 집계 결과에 조건을 설정하고 싶은 경우 
 - 서브쿼리 : 쿼리문을 한번 감싸서 다른 쿼리문에서 사용할 수 있음
 - HAVING 을 쓰면 쿼리 줄 수가 줄어듦
-- ---
+---
 
 ### 연습문제 6. trainer 테이블에서 "Iris" 트레이너의 정보를 알 수 있는 쿼리를 작성해주세요.
 
 ![week3_sql6.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql6.png)
+
 ---
 
 ### 연습문제 7. trainer 테이블에서 "Iris", "WHitney", "Cynthia" 트레이너의 정보를 알 수 있는 쿼리를 작성해주세요. 
@@ -76,23 +77,28 @@
 ### 연습문제 8. 전체 포켓몬 수는 얼마나 되나요?
 
 ![week3_sql8.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql8.png)
+
 ---
 
 ### 연습문제 9. 세대(Generation) 별로 포켓몬 수가 얼마나 되는지 알 수 있는 쿼리를 작성해주세요.
 
 ![week3_sql9.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql9.png)
+
 ---
 ### 연습문제 10. type2가 존재하는 포켓몬의 수는 얼마나 되나요? 
 
 ![week3_sql10.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql10.png)
+
 ---
 ### 연습문제 11. type2가 있는 포켓몬 중에 제일 많은 type1은 무엇인가요?
 
 ![week3_sql11.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql11.png)
+
 ---
 ### 연습문제 12. 단일(하나의 타입만 있는) 타입 포켓몬 중 많은 type1은 무엇일까요?
 
 ![week3_sql12.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql12.png)
+
 ---
 ### 연습문제 13. 포켓몬의 이름에 "파"가 들어가는 포켓몬은 어떤 포켓몬이 있을까요?
 
@@ -105,18 +111,22 @@
 ### 연습문제 14. 뱃지가 6개 이상인 트레이너는 몇 명이 있나요?
 
 ![week3_sql14.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql14.png)
+
 ---
 ### 연습문제 15. 트레이너가 보유한 포켓몬(trainer_pokemon)이 제일 많은 트레이너는 누구일까?
 
 ![week3_sql15.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql15.png)
+
 ---
 ### 연습문제 16. 포켓몬을 많이 풀어준 트레이너는 누구일까?
 
 ![week3_sql16.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql16.png)
+
 ---
 ### 연습문제 17. 트레이너 별로 풀어준 포켓몬의 비율이 20%가 넘는 포켓몬 트레이너는 누구일까요? 풀어준 포켓몬 비율 = (풀어준 포켓몬 수/전체 포켓몬의 수)
 
 ![week3_sql17.png](https://github.com/jeewonm54/til/blob/31d01a06a00bcfb0e02038b1b423e37d4d396deb/img/week3_sql17.png)
+
 ---
 
 
@@ -127,6 +137,7 @@
 
 ### GROUP BY ALL
 :  Group By 함수에 칼럼을 명시하지 않고 GROUP BY ALL 함수 사용 가능!
+
 ---
 # 섹션3
 
