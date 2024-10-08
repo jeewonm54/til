@@ -108,3 +108,79 @@ GROUP BY <집계할 컬럼>
 - SAFE_가 붙은 함수는 변환이 실패할 경우 NULL 변환됨
 
 ![week4_1]()
+
+## 문자열(STRING) 함수 
+
+문자열 : "안녕하세요" 같이 " " 형태로 된
+
+문자열 데이터로 할 수 있는 대표적인 연산 
+
+- 문자열 붙이기 => CONCAT
+```
+SELECT
+ CONCAT("안녕","하세요") AS result
+```
+From이 없는데 어떻게 동작하지?
+CONCAT 인자로 STRING이나 숫자를 넣을 때는 데이터를 직접 넣어준 것 => FROM이 없어도 실행 가능
+
+- 문자열 분리하기 => SPLIT
+```
+SELECT 
+ SPLIT(문자열_원본, 나눌 기준이 되는 문자) AS result
+```
+
+- 특정 단어 수정하기 => REPLACE
+```
+SELECT
+ REPLACE(문자열 원본, 찾을 단어, 바꿀 단어 ) AS result
+```
+- 문자열 자르기 => TRIM
+```
+SELECT
+ TRIM(문자열 원본, 자를 단어 ) AS result
+```
+
+- 영어 소문자를 대문자로 변경 => UPPER
+```
+SELECT
+ UPPER(문자열 원본) AS result
+```
+
+
+## 날짜 및 시간 데이터 이해하기 
+
+### 시간 데이터 다루기
+- 시간 데이터도 세부적으로 나눌 수 있음
+- DATE, DATETIME, TIMESTAMP 등
+
+- DATE : DATE만 표시하는 데이터, 2023-12-31
+- DATETIME :  DATE와 TIME까지 표시하는 데이터(DATE + TIME), Time Zone 정보 없음, 2023-12-31 14:00:00
+- TIME : 날짜와 무관하게 시간만 표시하는 데이터, 23:59:59:00
+
+- millisecons(ms)
+- 시간의 단위, 천 분의 1초(1,000ms = 1초)
+- 우리가 아는 초보다 더 짧은  시간 단위
+- 눈을 깜빡이는 시간이 약 100ms
+- 빠른 반응이 필요한 분야에서 사용(초보다 더 정확하게)
+- Millisecond => TIMESTAMP => DATETIME으로 변경 
+
+microsecond
+- 1/1,000ms, 1/1,000,000초
+
+### 타임존
+GMT : Greenwich Mean Time (한국시간 : GMT+9)
+- 영국의 그리니치 천문대(경도 0도)를 기준으로 지역에 따른 시간의 차이를 조정하기 위해 생긴 시간의 구분선 (1884년 채택)
+-영국 근처에서 자주 활용
+
+UTC : Universal Time Coordinated (한국 시간: UTC+9)
+- 국제적인 표준 시간
+- 협정 세계시
+- 타임존이 존재한다 = 특정 지역의 표준 시간대 
+
+TIMESTAMP
+- 시간 도장
+- UYC부터 경과한 시간을 나타내는 값
+- Time Zone 정보 있음
+- 2023-12-31 14:00:00 UTC
+
+DATETIME 쓸때는 timezone 꼭 넣는것 유의하기 
