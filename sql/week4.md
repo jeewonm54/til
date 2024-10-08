@@ -185,4 +185,9 @@ TIMESTAMP
 - Time Zone 정보 있음
 - 2023-12-31 14:00:00 UTC
 
-DATETIME 쓸때는 timezone 꼭 넣는것 유의하기 
+** DATETIME 쓸때는 timezone 꼭 넣는것 유의하기 
+
+- 많은 회사들의 Table에 시간이 TIMESTAMP로 저장된 경우가 많음 (혹은 DATETIME)
+
+### TIMESTAMP와 DATETIME 비교
+![ㅈㄷ다4_3](../img/week4_3.png)
