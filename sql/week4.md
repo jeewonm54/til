@@ -107,13 +107,15 @@ GROUP BY <집계할 컬럼>
 자료 타입을 변경하는 함수 : SAFE_CAST
 - SAFE_가 붙은 함수는 변환이 실패할 경우 NULL 변환됨
 
-![week4_1]()
+![week4_1](../img/week4_1.png)
 
 ## 문자열(STRING) 함수 
 
 문자열 : "안녕하세요" 같이 " " 형태로 된
 
 문자열 데이터로 할 수 있는 대표적인 연산 
+
+![week4_2](../img/week4_2.png)
 
 - 문자열 붙이기 => CONCAT
 ```
@@ -157,7 +159,7 @@ SELECT
 - DATETIME :  DATE와 TIME까지 표시하는 데이터(DATE + TIME), Time Zone 정보 없음, 2023-12-31 14:00:00
 - TIME : 날짜와 무관하게 시간만 표시하는 데이터, 23:59:59:00
 
-- millisecons(ms)
+millisecons(ms)
 - 시간의 단위, 천 분의 1초(1,000ms = 1초)
 - 우리가 아는 초보다 더 짧은  시간 단위
 - 눈을 깜빡이는 시간이 약 100ms
