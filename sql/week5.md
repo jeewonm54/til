@@ -10,7 +10,7 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 !(week5_1)[]
 
 - 요일을 추출하고 싶은 경우
-  **EXTRACT(DAYOFWEEK FROM datetime_col)**
+  ***EXTRACT(DAYOFWEEK FROM datetime_col)***
   - 한 주의 첫날이 일요일인 [1,7] 범위의 값을 반환
   - 주말만 찾고 싶으면 IN 조건 혹은 CASE WHEN 조과 함께 1,7 만 찾을 수 있음
 
