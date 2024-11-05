@@ -38,7 +38,10 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 
 ![week5_4](../img/week5_4.png)
 
+
+
 **4-5. 연습문제 1~5**
+ - 
 
 - != : 같지 않다 
 
@@ -88,6 +91,7 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
    ```
 
 **4-6. 조건부 함수 연습 문제 1~6**
+  -
 
 ![week5_10](../img/week5_10.png)
 
@@ -103,6 +107,7 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 
 
 **4-9. BigQuery 공식 문서 확인하는 법**
+ --
 
 - 개발 공식 문서 찾는 방법 : "기술명 + documentation"으로 검색 
     
