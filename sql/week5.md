@@ -7,7 +7,7 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 
 - 날짜, 년도, 월, 일, 시간, 시, 분 단위로 특정 부분만 추출하는 함수
 
-!(week5_1)[]
+![week5_1](../img/week5_1.png) 
 
 - 요일을 추출하고 싶은 경우
 
@@ -19,7 +19,7 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 
   **DATETIME_TRUNC(datetime_col, HOUR)**
   - "2021-01-01 14:42:13" 을 HOUR로 자르면 "2024-01-02 14:00:00"
-  - !(week5_2)[]
+  - ![week5_2](../img/week5_2.png)
  
 - 문자열로 저장된 DATETIME을 DATETIME 타입으로 바꾸고 싶은 경우
 
@@ -28,7 +28,7 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 - DATETIME 타입 데이터를 특정 행태의 문자열 데이터로 변환하고 싶은 경우
   **SELECT_DATETIME("%c", DATETIME "2024-01-11 12:35:35") AS formatted;**
 
-!(week5_3)[]
+![week5_3](../img/week5_3.png)
 
 - 마지막 날을 알고 싶은 경우; 자동으로 월의 마지막 값을 계산하여 특정 연산을 할 경우
   **LAST_DAY(DATETIME) : 월의 마지막 값을 반환**
@@ -36,21 +36,21 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 - 두 DATETIME 의 차이를 알고 싶은 경우
   **DATETIME_DIFF(첫 DATETIME, 두 번째 DATETIME, 궁금한 차이)**
 
-!(week5_4)[]
+![week5_4](../img/week5_4.png)
 
 **4-5. 연습문제 1~5**
 
 - != : 같지 않다 
 
-!(week5_5)[]
+![week5_5](../img/week5_5.png)
 
-!(week5_6)[]
+![week5_6](../img/week5_6.png)
 
-!(week5_7)[]
+![week5_7](../img/week5_7.png)
 
-!(week5_8)[]
+![week5_8](../img/week5_8.png)
 
-!(week5_9)[]
+![week5_9](../img/week5_9.png)
 
 ---
 
@@ -89,17 +89,17 @@ CURRENT _DATETIME([time_zone]) : 현재 Datetime 출력
 
 **4-6. 조건부 함수 연습 문제 1~6**
 
-!(week5_10)[]
+![week5_10](../img/week5_10.png)
 
-!(week5_11)[]
+![week5_11](../img/week5_11.png)
 
-!(week5_12)[]
+![week5_12](../img/week5_12.png)
 
-!(week5_13)[]
+![week5_13](../img/week5_13.png)
 
-!(week5_14)[]
+![week5_14](../img/week5_14.png)
 
-!(week5_15)[]
+![week5_15](../img/week5_15.png)
 
 
 **4-9. BigQuery 공식 문서 확인하는 법**
