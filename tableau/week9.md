@@ -8,6 +8,8 @@ Worldwide Wealth and Demographic Data: A Comprehensive Dataset
 
 #
 ## 백만장자 분포를 보기 위한 대시보드 
+https://public.tableau.com/app/profile/jeewon.min8458/viz/BillionareDashboard_17332320533270/1?publish=yes 
+
 ![week9_1](../img/week9_1.png)
 
 ### 생성한 시트
