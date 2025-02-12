@@ -63,7 +63,7 @@
 - 수십, 수백 개의 변수를 활용하여 모델을 만듦
 - 데이터를 기반으로 가설을 끌어내어 검증
 
-![statistics_week1](../img/statistics_week1.png)
+![statistics_week1](../img/statistics/statistics_week1.png)
 
 ## 1.4 통계학의 정의와 기원
 
@@ -82,8 +82,7 @@
 
 "표본의 특성을 분석 > 특성의 일반화 여부 판단 > 모집단의 특성으로 추정"
 
-![statistics_week2](../img/statistics_week2.png)
-
+![statistics_week2](../img/statistics/statistics_week1(2).png) 
 
 # 02. 모집단과 표본추출
 
@@ -106,7 +105,7 @@
 
 표본조사: 모집단에서 추출한 표본을 통해 모집단의 정보(평균, 표준편차 등)를 추정하고 검정하는 것
 
-![statistics_week1(3)](../img/statistics_week1(3).png)
+![statistics_week1(3)](../img/statistics/statistics_week1(3).png)
 
 ## 2.2 표본조사를 하는 이유와 데이터과학 적용 방법
 
@@ -125,7 +124,7 @@
 
 이렇게 표식이 있는 길고양이의 비율을 통해 관악구의 길고양이 모집단 수를 추정 가능
 
-![statistics_week1(4)](../img/statistics_week1(4).png)
+![statistics_week1(4)](../img/statistics/statistics_week1(4).png)
 
 ## 2.3 표본추출에서 나타나는 편향의 종류
 
@@ -175,12 +174,12 @@
 
 분산: 주어진 데이터 포인트(예를 들어 평균)에 대한 모델 예측의 가변성
 
-![statistics_week1(5)](../img/statistics_week1(5).png)
+![statistics_week1(5)](../img/statistics/statistics_week1(5).png) 
 
 ### - 편향과 분산은 트레이드오프 관계
 - 예측이나 분류 모델을 만들 때 주어진 학습 데이터에 잘 맞도록 모델을 만들수록 편향은 줄어들고 분산은 증가함
 
-![statistics_week1(6)](../img/statistics_week1(6).png)
+![statistics_week1(6)](../img/statistics/statistics_week1(6).png)
 
 - 모델의 복잡도가 상승할수록 편향은 감소하지만 분산은 증가 
 
@@ -268,7 +267,7 @@
 
 독립변수 : 종속변수 = 원인 : 결과
 
-![statistics_week1(7)](../img/statistics_week1(7).png)
+![statistics_week1(7)](../img/statistics/statistics_week1(7).png)
 
 - 독립변수와 종속변수는 서로 상관관계를 가짐
 - 독립변수 간에도 상관관계가 없어야 함!
@@ -313,9 +312,9 @@
   - 등간척도 / 온도, IQ 
   - 비율척도 / 몸무게, 매출액
 
-![statistics_week1(8)](../img/statistics_week1(8).png)
+![statistics_week1(8)](../img/statistics/statistics_week1(8).png)
 
-![statistics_week1(9)](../img/statistics_week1(9).png)
+![statistics_week1(9)](../img/statistics/statistics_week1(9).png)
 
 
 # 04. 데이터의 기술 통계적 측정
@@ -374,7 +373,7 @@
 : 분표가 정규분포보다 얼마나 뾰족하거나 완만한지의 정도를 나타내는 척도 
 - 데이터가 중심에 많이 몰려 있을수록 뾰족, 두루 퍼지면 구릉 모양
 - 첨도를 식으로 나타내면
-  ![statistics_week1(10)](../img/statistics_week1(10).png)
+  ![statistics_week1(10)](../img/statistics/statistics_week1(10).png)
 
 
 # 05. 확률과 확률변수
@@ -403,9 +402,9 @@
 * 연속확률분포의 종류와 특징을 설명할 수 있다. 
 * 중심극한정리(CLT)의 개념을 이해하고 설명 할 수 있다.
 ```
-![statistics_week1(11)](../img/statistics_week1(11).png)
+![statistics_week1(11)](../img/statistics/statistics_week1(11).png)
 
-![statistics_week1(12)](../img/statistics_week1(12).png)
+![statistics_week1(12)](../img/statistics/statistics_week1(12).png)
 
 [이산확률분포와 연속확률분포 추가자료](https://velog.io/@tngus0325/%EC%9D%B4%EC%82%B0%ED%99%95%EB%A5%A0-%EB%B6%84%ED%8F%AC%EC%99%80-%EC%97%B0%EC%86%8D%ED%99%95%EB%A5%A0-%EB%B6%84%ED%8F%AC-%EC%A0%95%EB%A6%AC)
 
@@ -479,9 +478,9 @@
 가설: 검정하고자 하는 주제. 연구문제에 대한 잠정적 결론
 
 목적성에 따라 
-![statistics_week1(13)](../img/statistics_week1(13).png)
+![statistics_week1(13)](../img/statistics/statistics_week1(13).png)
 
-![statistics_week1(14)](../img/statistics_week1(14).png)
+![statistics_week1(14)](../img/statistics/statistics_week1(14).png)
 
 귀무가설: 증명하고자 하는 가설고 반대되는 가설, 효과와 차이가 없는 가설
 
