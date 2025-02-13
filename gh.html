@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜와 가격 선택</title>
+    <style>
+        body {
+            background-color: #062332;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-image: url('KakaoTalk_20250213_213157122_03.jpg'); /* 업로드한 이미지로 변경 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #062332;
+            cursor: pointer;
+            width: 200px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="alert('날짜 선택 화면으로 이동합니다')">날짜 선택하러 가기</button>
+    </div>
+    <div style="height: 20px;"></div>
+    <div class="button-container">
+        <button onclick="alert('가격 선택 화면으로 이동합니다')">가격 선택하러 가기</button>
+    </div>
+</body>
+</html>
